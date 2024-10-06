@@ -4,7 +4,7 @@ from groq import Groq
 from PIL import Image
 
 # Initialize the Groq client with your actual API key
-client = Groq(api_key='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')
+client = Groq(api_key='secret')
 
 # Function to extract text from a PDF
 def extract_text_from_pdf(pdf_file):
