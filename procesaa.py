@@ -7,7 +7,7 @@ import base64
 import os
 
 # Initialize the Groq client with your actual API key
-client = Groq(api_key='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')
+client = Groq(api_key='secret')
 
 # Initialize pyttsx3 for text-to-speech
 engine = pyttsx3.init()
