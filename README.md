@@ -1,6 +1,6 @@
 ## Baltic AI Hakathon
 ### Challange 7:  LVRTC Adaptive AI Solutions for Personalized Learning of Regulations and Guidelines
-This Python code (app.py) creates a Streamlit web app designed for extracting text from PDFs, summarizing the content, generating true/false quizzes, answering user questions about the text, and providing text-to-speech functionality. Here's a more detailed breakdown of the specification:
+This Python code in `app.py` file creates a Streamlit web app designed for extracting text from PDFs, summarizing the content, generating true/false quizzes, answering user questions about the text, and providing text-to-speech functionality. Here's a more detailed breakdown of the specification:
 
 ### 1. **PDF Text Extraction**
    - **Library**: `PyMuPDF` (`fitz`).
@@ -27,6 +27,15 @@ This Python code (app.py) creates a Streamlit web app designed for extracting te
        - Randomly selects either the true or modified false sentence as the quiz question and returns it along with a boolean answer (True for correct statements, False for incorrect).
    - **Quiz Logic**:
      - The app allows users to answer true/false questions via `st.radio()` buttons. After submitting their answers, the correct answers are counted, and a score is presented.
+
+---
+
+### ⚠️ **Important Notice!**
+
+The quiz feature is not fully developed yet; it is currently just a rough concept that demonstrates how it might look visually. In future iterations, the logic will be refined using AI generation techniques to ensure accurate answers and to create more personalized and knowledge-deepening test questions.
+
+---
+
 
 ### 4. **Question & Answering Based on PDF Content**
    - **API Service**: Groq API.
@@ -82,7 +91,7 @@ This specification outlines how each component in the app functions and interact
 
 **Reference:**
 
-This website development code was initially based on the tutorial from Pitsillides91's project "Using FB Llama models on PDF," available on GitHub [Pitsillides91 GitHub repository](https://github.com/Pitsillides91/llms_2024/blob/main/4.Metas_Llama/Using%20FB%20llama%20models%20on%20PDF.ipynb). The functionality, including PDF text extraction, text summarization, and the use of the LLaMA model, was further modified and adapted to meet our specific requirements and to expand the website's capabilities.
+This website development code was initially based on the tutorial from Pitsillides91's project "Using FB Llama models on PDF," available on GitHub [Pitsillides91 GitHub repository](https://github.com/Pitsillides91/llms_2024/blob/main/4.Metas_Llama/Using%20FB%20llama%20models%20on%20PDF.ipynb). The functionality, including PDF text extraction, text summarization, and the use of the LLaMA model, diolog addiotion,  audio file and quiz building, was further modified, adapted or added to meet our specific requirements and to expand the website's capabilities.
 
 
 ---
